@@ -488,6 +488,7 @@ a {
             display: block;
             width: 100%;
             color: white;
+            padding: 8px;
         }
 
         width: 100%;
@@ -496,6 +497,10 @@ a {
 
         &--half {
             width: 50%;
+
+            select option {
+                color: black;
+            }
         }
 
     }
