@@ -11,25 +11,40 @@
         <header class="header">
             <div class="wrapper">
                 <h1 class="header__logo">YOURCOMPANYNAME</h1>
-                <nav class="header__nav">
+                <div class="header__burger">
+                    <svg class="ham hamRotate ham8" viewBox="0 0 100 100" width="80">
+                        <path
+                              class="line top"
+                              d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+                        <path
+                              class="line middle"
+                              d="m 30,50 h 40" />
+                        <path
+                              class="line bottom"
+                              d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+                      </svg>                      
+                </div>
+            </div>
+            <nav class="header__nav">
+                <div class="wrapper">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
                         <li><a href="#">Services</a></li>
                         <li><a href="#">Testimonials</a></li>
                         <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#contacts">Contacts</a></li>
                     </ul>
-                </nav>
-            </div>
+                </div>
+            </nav>
         </header>
-        <section class="slider">
-            <div class="slider__bg">
-                <img src="https://placekitten.com/1920/1080" alt="BG">
+        <section class="hero">
+            <div class="hero__bg">
+                <img src="https://placekitten.com/1920/1078" alt="BG">
             </div>
-            <div class="slider__content">
+            <div class="hero__content">
                 <p>Welcome to</p>
-                <p>YOURCOMPANY</p>
+                <p>YOURCOMPANYNAME</p>
             </div>
         </section>
         <section class="team">
@@ -82,13 +97,15 @@
             </div>
         </section>
         <section class="bg">
-            <div class="bg__img"></div>
+            <div class="bg__img">
+                <img src="assets/dotts-rekrutacja.jpg">
+            </div>
         </section>
-        <section class="form">
+        <section class="form" id="contacts">
             <div class="wrapper">
                 <h2 class="form__title">Contact Us</h2>
-                <h3 class="form__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed consectetur velit rem, laboriosam illum voluptatum repudiandae adipisci. Reiciendis veniam incidunt consequuntur saepe distinctio ipsa placeat vel, beatae error, eos sint?</h3>
-                <form action="?" method="POST">
+                <h3 class="form__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed consectetur velit rem, laboriosam illum voluptatum repudiandae adipisci. </h3>
+                <form class="form__form" action="?" method="POST">
                     <label class="form__label form__label--half">
                         <input type="text" name="name" placeholder="Name">
                     </label>
@@ -123,7 +140,7 @@
                 </form>
             </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
             <div class="wrapper">
                 <div class="about__left">
                     <div class="about__img">
@@ -132,7 +149,7 @@
                 </div>
                 <div class="about__right">
                     <h2 class="about__heading">About us</h2>
-                    <h3 class="about__subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi totam delectus consectetur eius fugit corrupti explicabo consequatur amet illo reprehenderit, laudantium minus cum placeat inventore voluptas iure quo ad? Recusandae!</h3>
+                    <h3 class="about__subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi totam delectus consectetur eius fugit corrupti explicabo consequatur </h3>
                     <div class="about__what">
                         <div class="about__single">
                             <div class="about__single-img">
@@ -144,13 +161,13 @@
                             <div class="about__single-img">
                                 <img src="assets/koala.jpg" alt="Koala">
                             </div>
-                            <p class="about__single-name">Friendly team</p>
+                            <p class="about__single-name">Involved</p>
                         </div>
                         <div class="about__single">
                             <div class="about__single-img">
                                 <img src="assets/leniwiec.jpg" alt="Leniwiec">
                             </div>
-                            <p class="about__single-name">Friendly team</p>
+                            <p class="about__single-name">24/7 Assistance</p>
                         </div>
                     </div>
                 </div>
@@ -162,25 +179,83 @@
                 <h3 class="gallery__subheading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius iure voluptatibus natus repellendus laboriosam nesciunt consequuntur earum nam rem illum. Quae iste id facilis aperiam. Aliquam eius tempora deserunt maiores?</h3>
             </div>
             <div class="gallery__slider">
-                <div class="gallery__slide">
-                    <img src="https://placekitten.com/500/500" alt="Kot">
+                <div class="gallery__slides">
+                    <div class="gallery__slide">
+                        <img src="https://placekitten.com/500/500" alt="Kot">
+                    </div>
+                    <div class="gallery__slide">
+                        <img src="https://placekitten.com/400/500" alt="Kot">
+                    </div>
+                    <div class="gallery__slide">
+                        <img src="https://placekitten.com/500/400" alt="Kot">
+                    </div>
+                    <div class="gallery__slide">
+                        <img src="https://placekitten.com/500/300" alt="Kot">
+                    </div>
+                    <div class="gallery__slide">
+                        <img src="https://placekitten.com/300/500" alt="Kot">
+                    </div>
+                    <div class="gallery__slide">
+                        <img src="https://placekitten.com/600/500" alt="Kot">
+                    </div>
                 </div>
-                <div class="gallery__slide">
-                    <img src="https://placekitten.com/500/500" alt="Kot">
-                </div>
-                <div class="gallery__slide">
-                    <img src="https://placekitten.com/500/500" alt="Kot">
-                </div>
-                <div class="gallery__slide">
-                    <img src="https://placekitten.com/500/500" alt="Kot">
-                </div>
-                <div class="gallery__slide">
-                    <img src="https://placekitten.com/500/500" alt="Kot">
-                </div>
-                <div class="gallery__slide">
-                    <img src="https://placekitten.com/500/500" alt="Kot">
+                <div class="wrapper gallery__arrows">
+                    <button class="gallery__arrow gallery__arrow--prev">Poprzedni</button>
+                    <button class="gallery__arrow gallery__arrow--next active">Następny</button>
                 </div>
             </div>
+        </section>
+    <section class="footer">
+        <div class = "footer__items">
+            <div class="footer__item">
+                <h4 class="footer__heading">Conent</h4>
+                <ul >
+                    <li>Lorem ipsum</li>
+                    <li>Dolor sit</li>
+                </ul>
+            </div>
+            <div class="footer__item">
+                <h4 class="footer__heading">Information</h4>
+                <ul>
+                    <li>Lorem ipsum</li>
+                    <li>Onsectetur adipisicing</li>
+                </ul>
+            </div>
+            <div class="footer__item">
+                <h4 class="footer__heading">Legal</h4>
+                <ul>
+                    <li>Adipiscing elit</li>
+                    <li>Sed do eiusmod</li>
+                    <li>Tempor incidi</li>
+                </ul>
+            </div>
+            <div class="footer__item">
+                <h4 class="footer__heading">Help</h4>
+                <ul>
+                <li>Lorem ipsum</li>
+                <li>Onsectetur adipisicing</li>
+            </ul>
+        </div>
+        <div class="footer__item">
+            <div class="footer__contact">
+                <ul >
+                    <li class="icon-phone">3-6000-0000<br/>-6000-000-0000</li>
+                    <li class="icon-map">67700 Dagenham St England, GB</li>
+                </ul>
+            </div>
+            </div>
+            </div>
+        </section>
+        <section class="footer2">
+            <p class="footer2__text">
+                Copyright &copy; 2019. Your companyname All rights reserved 
+            </p>
+            <div class="footer2__images">
+            <img src="/assets/facebook.svg">
+            <img src="/assets/google.svg">
+            <img src="/assets/twitter.svg">
+            <img src="assets/black-instagram (1).svg">
+        </div>
         </section>
         <script src="assets/scripts.js" defer></script>
     </body>
